@@ -1,0 +1,248 @@
+:root{
+    --bg:rgb(73, 73, 228);
+    --card: #10162a;
+    --muted: #7d8ab8;
+    --text: #fff;
+    --primary: orange;
+    --success: #10b981;
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(80% 120% at 20% 0%, #1e2c71 0%, var(--bg) 50% 100%), var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  
+}
+.topbar{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #0f1530;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(0, 255, 128, 0.06);
+}
+.topbar strong
+{
+    color: var(--text);
+}
+head .nav{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    background: rgb(61,205,61);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.nav-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: radial-gradient(135deg, var(--primary),#7aa2ff);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: 800;
+    box-shadow: var(--shadow);
+
+}
+.brand span{
+    font-weight: 700;
+    letter-spacing: .3px;
+    color: var(--text);
+
+}
+nav ul{
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav a{
+    text-decoration: none;
+    color: var(--muted);
+    font-weight: 500;
+}
+nav a:hover{
+    color: var(--text);
+
+}
+.search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.search input{
+    background-color: blue;
+    border: 1px solid gray;
+    color: var(--text);
+    pad: 10px 12px;
+    outline: 240px;
+}
+.btn{
+    appearance: none;
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-primary{
+    background: linear-gradient(135deg, var(--primary), #3b82f6);
+    color: white;
+
+}
+.btn-outline{
+background: transparent;
+color: var(--text);
+border: 1px solid gray;
+}
+.hero{
+    position: relative;
+    overflow: hidden;
+
+}
+.hero .inner{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+    padding: 56px 0;
+
+}
+.hero h1{
+    font-size: clamp(28px, 4vw,44px);
+    line-height: 1.2;
+    margin: 0 0 14px;
+
+}
+.hero p{
+    color: var(--muted);
+    margin: 0 0 22px;
+
+}
+.pill{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid gray;
+    color: #fff;
+    background: #0f1530;
+
+}
+.hero-cta{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+}
+.hero-card{
+    background: linear-gradient(180deg,gray,rgb(40,35,35)30%),var(--card);
+    border: 1px solid gray;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 18px;
+    display: grid;
+    gap: 12px;
+    align-self: stretch;
+}
+.hero-card img{
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+#main{
+    display: flex;
+    max-width: 12000;
+    margin: 20px auto;
+    gap: 20px;
+}
+.usps{
+     position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+.usp{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background: var(--primary) ;
+}
+.layout{
+    color: aqua;
+    align-items: center;
+}
+.sidebar{
+    background-color: #10162a;
+    align-self: center;
+}
+.filter{
+font-size: 20px;
+text-align-last: center;
+gap: 30px;
+border-radius: 12px;
+border: 1px solid gray;
+}
+.toolbar{
+    background-color: #3b82f6;
+}
+.sort{
+    display: flex;
+    gap: 10px;
+    border: 10px;
+}
+.grid{
+    display: block;
+    padding: 10px;
+    margin: 20px;
+}
+.grid .card{
+    background: linear-gradient(180deg,gray,rgb(40,35,35)30%),var(--card);
+    border: 1px solid gray;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 18px;
+    display: grid;
+    gap: 12px;
+    align-self: stretch;
+}
+.grid .imgwrag{
+width: 100%;
+border-radius: 12px;
+ object-fit: cover; 
+}

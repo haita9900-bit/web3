@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wed công nghệ 5.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    🚚<span>Shop đồ công nghệ 5.0</span>
+    🎁<span>giao nhanh nội thành 2h</span>
+    🛠️<span>hỗ trợ bảo hành 2 năm</span>
+    💳<span>trả góp 0%</span>
+  </div>
+  <header class="nav">
+<div class="container nav-inner">
+  <a href="">
+    <div class="logo">Trang Chủ</div>
+    <span>shop công nghệ 5.0</span>
+  </a>
+  <nav aria-label="chính">
+    <ul>
+      <li><a href="">sản phẩm</a></li>
+      <li><a href="">ưu điểm</a></li>
+      <li><a href="">liên hệ</a></li>
+      <li><a href="">giỏ hàng</a></li>
+      <li><a href="">tài khoản</a></li>
+      <li><a href="">đăng xuất</a></li>
+    </ul>
+  </nav>
+  <div class="search" role="search">
+    <input type="search" placeholder="shop công nghệ 5.0" aria-label="tìm kiếm sản phẩm">
+<button class="btn btn-outline" aria-label="tìm">tìm kiếm</button>
+<button class="btn btn-primary" aria-label="xem giỏ hàng">giỏ hàng</button>
+  </div>
+</div>
+  </header>
+  <section class="hero">
+    <div class="container inner">
+      <div>
+        <span class="pill">🎁giảm tới tuần này - giảm tới 20% cho laptop intel-amd</span>
+        <h1>máy tính và laptop chính hãng hiện năng mạnh và giá tốt</h1>
+        <p>Chọn chiếc máy phù hợp, học tập, chơi game</p>
+        <div>
+          <a href="chitiet.html" class="btn btn-primary">Xem chi tiết</a>
+          <a href="congnghe5.0.html" class="btn btn-outline">ví sao chọn shop công nghệ 5.0</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="sản phẩm nổi bật">
+        <img src="./1.jpg" alt="laptop hiệu năng cao">
+        <div class="row">
+          <div>
+            <strong>lenovo legion 7</strong>
+            <div class="specs">i9-14900HX/32GB/1TB PCIE/VGA 8GB RTX4070/16.0 3.2K 165HZ/WIN11</div>
+          </div>
+          <div class="price-tag">60.990.000đ</div>
+        </div>
+        <div class="row">
+          <span class="badge">sản phẩm khác nổi bật</span>
+          <a href="product.html" class="btn btn-primary">Mua Ngay</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <main>
+    <!-- ưu điểm sản phẩm-->
+     <div id="ưu điểm" class="usps" aria-label="lợi ích">
+  <div class="usp"><strong>trả góp 0%</strong> <span>thủ tục nhanh trong 15 phút</span></div>
+  <div class="usp"><strong>hỗ trợ bảo hành 2 năm</strong> <span>đổi mới trong 30 ngày</span></div>
+  <div class="usp"><strong>giao hàng nhanh</strong> <span>nhận hàng trong 2h</span></div>
+     </div>
+     <!-- layout -->
+      <div class="layout">
+<!-- sidebar filter -->
+ <aside class="sidebar" aria-label="bộ lọc"> 
+  <div class="filter">
+    <h3>bộ lọc</h3>
+    <div class="group">
+      <strong>Danh mục sản phẩm</strong>
+    <label class="checkbox"><input type="checkbox" checked>laptop Gaming</label>
+    <label class="checkbox"><input type="checkbox">điện thoại di động</label>
+    <label class="checkbox"><input type="checkbox">phụ kiện</label>
+    <label class="checkbox"><input type="checkbox">thiết bị thông minh</label>
+    <label class="checkbox"><input type="checkbox">đồ chơi công nghệ</label>
+  </div>
+    <div class="group">
+      <strong>Thương hiệu</strong>
+    <label class="checkbox"><input type="checkbox" checked>Lenovo</label>
+    <label class="checkbox"><input type="checkbox">Asus</label>
+    <label class="checkbox"><input type="checkbox">Apple</label>
+    <label class="checkbox"><input type="checkbox">MSI</label>
+    <label class="checkbox"><input type="checkbox">Acer</label>
+  </div>
+  <div class="group">
+    <strong>khoảng giá</strong>
+    <input type="range" class="range" min="5" max="60" value="25" aria-label="giá tối đa (triệu)">
+    <div style="display: flex; justify-content: space-between;font-size: 14px;color: #3c0f50"> 
+      <span>5 triệu</span>
+      <span>25 triệu</span>
+      <span>60 triệu</span>
+    </div>
+    <div><a href="index.html">tìm kiếm</a></div>
+    </div>
+  </div>
+</aside>
+<!-- sản phẩm -->
+ <section aria-labelledby="sp-title">
+  <div class="toolbar">
+<h2 id="sp-title">Sản phẩm nổi bật</h2>
+<div class="sort">
+  <label for="sort-select">Sắp xếp theo:</label>
+  <select name="sort" id="sort">
+    <option value="">mới nhất</option>
+    <option value="">giá tăng dần</option>
+    <option value="">giá giảm dần</option>
+    <option value="">bán chạy</option>
+          </select>
+       </div>
+    </div>
+    <div id="sản phẩm" class="grid">
+    <!-- card 1 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./1.jpg" alt="lenovo legion 7">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">lenovo legion 7</div>
+        <div class="specs">i9-14900HX/32GB/1TB PCIE/VGA 8GB RTX4070/16.0 3.2K 165HZ/WIN11</div>
+        <div class="rating">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">59.000.000đ</span>
+          <span class="old">60.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+      <!-- card 2 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./2022_asus_tuf_gaming_f15_fx507_jaeger_gray_c8fc1c350e.webp" alt="asus tuf f15">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">Asus TUF F15</div>
+        <div class="specs">i5 12500H/16GB/512GB/15.6"/Nvidia RTX3050 4GB/Win11</div>
+        <div class="rating">⭐⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">18.490.000đ</span>
+          <span class="old">20.490.000D</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+      <!-- card 3 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./text_ng_n_47__3_2_1.png" alt="">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">lenovo LOQ</div>
+        <div class="specs">R5-7235HS/24GB/512GB PCIE/VGA 6GB RTX3050/15.6 FHD</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">19.000.000đ</span>
+          <span class="old">22.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+      <!-- card 4 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./apple-iphone-17-pro-max-white-official-image_1.webp" alt="ip 17 prm">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">ip 17prm cam vũ trụ</div>
+        <div class="specs">với hiệu năng vượt trội với con chip A19</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">34.000.000đ</span>
+          <span class="old">64.000.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+      <!-- card 5 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./apple-ipad-pro-13-2025-512gb-wifi-space-schwarz-15576679.avif" alt="">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">ipad 13pro</div>
+        <div class="specs">với con chip A4,màn hình Ultra Retina XDR</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">19.990.000đ</span>
+          <span class="old">22.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+       <!-- card 6 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./webcam-logitech-brio-4k-stream-edition-2.webp" alt="">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">Webcam Logitech Brio 4K Stream Edition</div>
+        <div class="specs">khung hình 4k</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">4.690.000đ</span>
+          <span class="old">5.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+       <!-- card 7 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./vn_mac_1_2.webp" alt="">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">Apple MacBook Air M2 2024</div>
+        <div class="specs">8CPU 8GPU 16GB 256GB</div>
+        <div class="rating">⭐⭐⭐⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">19.000.000đ</span>
+          <span class="old">19.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+       <!-- card 8 -->
+      <article class="card">
+        <div class="imgwrag">
+         <img src="./1221_5.webp" alt="">
+         <span class="chip" 
+         style="background-color: brown; color: peachpuff; border-color: brown;"
+         >hot</span>
+        </div>
+       <div class="content">
+        <div class="title">Apple Watch Series 11 46mm (5G)</div>
+        <div class="specs">
+          Màn hình Retina Luôn Bật với OLED góc rộng và LTPO3
+          Độ sáng đỉnh lên đến 2000 nit
+        </div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <div class="price">
+          <span class="now">22.990.000đ</span>
+          <span class="old">23.990.000đ</span>
+        </div>
+        <div class="actions">
+          <a href="class="btn btn-primary">thêm giỏ hàng</a>
+          <a href="class="btn btn-outline">chi tiết sản phẩm</a>
+        </div>
+       </div>
+      </article>
+    </div>
+ </section>
+</div>
+  </main>
+<footer id="lien he">
+  <div class=""footer">
+    <div>
+          <h3>Shopcongnghe5 </h3>
+          <p>số 44 Yết Kiêu, phường Cửa Nam, quận Hoàn Kiếm, TP Hà Nội</p>
+          <p>hotline:0989999990 - Email: Shopcongnghe5.0@gmail.com</p>
+          <div>&copy;2025 Shopcongnghe5.0; AlL right reserved  </div>
+    </div>
+    <div>
+      <h4>Danh mục</h4>
+      <p><a href="">laptop</a></p>
+      <p><a href="">điện thoại</a></p>
+      <p><a href="">phụ kiện</a></p>
+      <p><a href="">đồ chơi công nghệ</a></p>
+    </div>
+    <div>
+      <h4>Hỗ trợ</h4>
+      <p><a href="">Chính sách bảo hành</a></p>
+      <p><a href="">Giao hàng & Thanh toán</a></p>
+      <p><a href="">trả góp</a></p>
+      <p><a href="">liên hệ</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
